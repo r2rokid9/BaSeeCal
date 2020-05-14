@@ -1,0 +1,42 @@
+function void callEven()
+{
+	write ("EVEN!\n");
+}
+
+function void askNumbers()
+{
+	int a,b;
+	int sum;
+	write ("Hey! Enter a number: ");
+	read (a);
+	write ("Enter another one: ");
+	read (b);
+	sum = a+b;
+	write ("Yehey! The sum is: "+sum+"\n");
+}
+
+function void drawNumbers()
+{
+	int n = 1;
+	int tempN;
+	write ("Here we are!\n");
+	 while (n <= 3)
+	 {
+		write ("Case #"+n+":\n");
+		askNumbers();
+		tempN = n;
+		n = tempN+1;
+	 }
+}
+
+main ()
+{
+	int ho = 6,tempHo;
+	while (ho < 10)
+	 {
+		write (""+ho+"\n");
+		tempHo = ho;
+		ho = tempHo+1;
+	 }
+	 drawNumbers();
+}

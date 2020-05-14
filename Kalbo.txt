@@ -1,0 +1,32 @@
+function void kalbo()
+{
+	write ("Hello!");
+}
+
+main()
+{
+	_COMMENT ....Hello, this should be our program;
+	_COMMENT ....We should now be able to add comments;
+
+	int a = 2,b;
+	string str;
+
+	a = 0;
+
+	_COMMENT b = a+1;
+	_COMMENT a = b+1;
+	_COMMENT a = b+1;
+
+	write ("For a = "+a+"\n");
+	while (a <= 10)
+	{
+		b = a+1;
+		write (""+a+": ");
+		if (a$2 == 0)
+			write ("EVEN\n");
+		if (a$2 == 1)
+			write ("ODD\n");
+		a = b;
+	}
+	write ("Have a nice day!\n");
+}

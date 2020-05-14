@@ -1,0 +1,261 @@
+On Line 1:
+number_sign IDENTIFIER as INTEGER sem_col 
+#KELVIN as 18;
+constant declaration - ACCEPT
+
+On Line 2:
+number_sign IDENTIFIER as FLOATING sem_col 
+#PI as 3.14159;
+constant declaration - ACCEPT
+
+On Line 4:
+array_optr int_optr array_var op_brack INTEGER cl_brack sem_col 
+array int arrays[100];
+array declaration - ACCEPT
+
+On Line 6:
+func int_optr FUNCTION_CALL op_paren int_optr IDENTIFIER cl_paren 
+function int factorial(int n)
+Function declaration - ACCEPT
+
+{
+
+
+On Line 8:
+int_optr IDENTIFIER comma IDENTIFIER sem_col 
+int temp,z;
+1
+2
+6
+2
+4
+Integer variable(s) declaration - ACCEPT
+
+On Line 9:
+if_optr op_paren IDENTIFIER rel_optr INTEGER cl_paren 
+if (n <= 1)
+If declaration - ACCEPT
+
+{
+
+
+On Line 11:
+return_optr INTEGER sem_col 
+return 1;
+Return declaration - ACCEPT
+
+}
+
+
+else
+else declaration - ACCEPT
+
+{
+
+
+On Line 15:
+IDENTIFIER ass_val IDENTIFIER optr INTEGER sem_col 
+temp = n-1;
+1
+optr
+2
+INTEGER
+3
+sem_col
+Assignment declaration - ACCEPT
+
+On Line 16:
+assign_optr op_paren IDENTIFIER cl_paren ass_val FUNCTION_CALL op_paren IDENTIFIER cl_paren sem_col 
+assign(z) = factorial(temp);
+Function assign variable(s) declaration - ACCEPT
+
+On Line 17:
+return_optr IDENTIFIER optr IDENTIFIER sem_col 
+return n * z;
+1
+optr
+2
+IDENTIFIER
+3
+sem_col
+Return declaration - ACCEPT
+
+}
+
+
+}
+
+
+On Line 21:
+func int_optr FUNCTION_CALL op_paren int_optr IDENTIFIER comma int_optr IDENTIFIER cl_paren 
+function int square(int n,int u)
+Function declaration - ACCEPT
+
+{
+
+
+On Line 23:
+return_optr IDENTIFIER optr IDENTIFIER sem_col 
+return n + u;
+1
+optr
+2
+IDENTIFIER
+3
+sem_col
+Return declaration - ACCEPT
+
+}
+
+
+On Line 26:
+func void_optr FUNCTION_CALL op_paren cl_paren 
+function void kalbo()
+Function declaration - ACCEPT
+
+{
+
+
+On Line 29:
+int_optr IDENTIFIER ass_val INTEGER comma IDENTIFIER ass_val INTEGER comma IDENTIFIER sem_col 
+int n = 2,v = 3,z;
+1
+2
+3
+5
+6
+2
+3
+5
+6
+2
+4
+Integer variable(s) declaration - ACCEPT
+
+On Line 30:
+int_optr IDENTIFIER sem_col 
+int x;
+1
+2
+4
+Integer variable(s) declaration - ACCEPT
+
+On Line 31:
+assign_optr op_paren IDENTIFIER cl_paren ass_val FUNCTION_CALL op_paren IDENTIFIER comma IDENTIFIER cl_paren sem_col 
+assign(x) = square(n,n);
+Function assign variable(s) declaration - ACCEPT
+
+On Line 32:
+assign_optr op_paren IDENTIFIER cl_paren ass_val FUNCTION_CALL op_paren IDENTIFIER comma IDENTIFIER cl_paren sem_col 
+assign(z) = square(v,v);
+Function assign variable(s) declaration - ACCEPT
+
+On Line 34:
+while_optr op_paren IDENTIFIER rel_optr INTEGER cl_paren 
+while (n < 10)
+While declaration - ACCEPT
+
+{
+
+
+On Line 36:
+assign_optr op_paren IDENTIFIER cl_paren ass_val FUNCTION_CALL op_paren IDENTIFIER comma INTEGER cl_paren sem_col 
+assign(x) = square(n,3);
+Function assign variable(s) declaration - ACCEPT
+
+On Line 37:
+assign_optr op_paren IDENTIFIER cl_paren ass_val FUNCTION_CALL op_paren IDENTIFIER comma INTEGER cl_paren sem_col 
+assign(z) = square(v,3);
+Function assign variable(s) declaration - ACCEPT
+
+On Line 38:
+write_optr op_paren doub_quote CONST doub_quote optr IDENTIFIER optr doub_quote CONST doub_quote cl_paren sem_col 
+write (""+x+"\n");
+write declaration - ACCEPT
+
+On Line 39:
+write_optr op_paren doub_quote CONST doub_quote optr IDENTIFIER optr doub_quote CONST doub_quote cl_paren sem_col 
+write (""+z+"\n");
+write declaration - ACCEPT
+
+On Line 40:
+IDENTIFIER ass_val IDENTIFIER optr INTEGER sem_col 
+n = n+1;
+1
+optr
+2
+INTEGER
+3
+sem_col
+Assignment declaration - ACCEPT
+
+On Line 41:
+IDENTIFIER ass_val IDENTIFIER optr INTEGER sem_col 
+v = v+1;
+1
+optr
+2
+INTEGER
+3
+sem_col
+Assignment declaration - ACCEPT
+
+}
+
+
+}
+
+
+On Line 45:
+main_optr op_paren cl_paren 
+main ()
+Main function declaration - ACCEPT
+
+{
+
+
+On Line 47:
+int_optr IDENTIFIER ass_val INTEGER comma IDENTIFIER ass_val INTEGER comma IDENTIFIER sem_col 
+int i = 5,n = 2,x;
+1
+2
+3
+5
+6
+2
+3
+5
+6
+2
+4
+Integer variable(s) declaration - ACCEPT
+
+On Line 48:
+int_optr IDENTIFIER ass_val INTEGER sem_col 
+int f = 3;
+1
+2
+3
+5
+4
+Integer variable(s) declaration - ACCEPT
+
+On Line 49:
+IDENTIFIER ass_val INTEGER optr INTEGER sem_col 
+f = 3 / 2;
+1
+optr
+2
+INTEGER
+3
+sem_col
+Assignment declaration - ACCEPT
+
+On Line 50:
+write_optr op_paren IDENTIFIER cl_paren sem_col 
+write (f);
+write declaration - ACCEPT
+
+}
+
+

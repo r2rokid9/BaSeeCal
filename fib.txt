@@ -1,0 +1,50 @@
+function void kalbo()
+{
+	write ("Hello!");
+}
+
+main()
+{
+	_COMMENT ....Hello, this should be our program;
+	_COMMENT ....We should now be able to add comments;
+
+	int a = 2,b,c,index,temp_index;
+
+	int n1,n2;
+
+	string str;
+
+	a = 1;
+	b = 1;
+	c = a+b;
+
+	_COMMENT b = a+1;
+	_COMMENT a = b+1;
+	_COMMENT a = b+1;
+
+	write ("FIBONACCI:\n");
+
+	write ("f(0) = "+a+"\n");
+	write ("f(1) = "+b+"\n");
+	index = 2;
+
+	while (b <= 859963392)
+	{
+		n1 = index-1;
+		n2 = index-2;
+		write ("f("+index+") = f("+n1+") + f("+n2+") = "+c+"");
+		if (c$2 == 0)
+			write(" (an even number) \n");
+		if (c$2 == 1)
+			write (" (an odd number) \n");
+		a = b;
+		b = c;
+		c = a+b;
+		temp_index = index+1;
+		index = temp_index;
+	}
+	write ("\n");
+	write ("End of the Fibonacci number sequence...for now.\n");
+	write ("Have a nice day!\n");
+
+}

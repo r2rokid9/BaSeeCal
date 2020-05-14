@@ -1,0 +1,102 @@
+#KELVIN as 18;
+number_sign IDENTIFIER as INTEGER sem_col 
+#PI as 3.14159;
+number_sign IDENTIFIER as FLOATING sem_col 
+
+
+array int arrays[100];
+array_optr int_optr array_var op_brack INTEGER cl_brack sem_col 
+
+
+function int factorial(int n)
+func int_optr FUNCTION_CALL op_paren int_optr IDENTIFIER cl_paren 
+{
+op_brace 
+int temp,z;
+int_optr IDENTIFIER comma IDENTIFIER sem_col 
+if (n <= 1)
+if_optr op_paren IDENTIFIER rel_optr INTEGER cl_paren 
+{
+op_brace 
+return 1;
+return_optr INTEGER sem_col 
+}
+cl_brace 
+else
+else_optr 
+{
+op_brace 
+temp = n-1;
+IDENTIFIER ass_val IDENTIFIER optr INTEGER sem_col 
+assign(z) = factorial(temp);
+assign_optr op_paren IDENTIFIER cl_paren ass_val FUNCTION_CALL op_paren IDENTIFIER cl_paren sem_col 
+return n * z;
+return_optr IDENTIFIER optr IDENTIFIER sem_col 
+}
+cl_brace 
+}
+cl_brace 
+
+
+function int square(int n,int u)
+func int_optr FUNCTION_CALL op_paren int_optr IDENTIFIER comma int_optr IDENTIFIER cl_paren 
+{
+op_brace 
+return n + u;
+return_optr IDENTIFIER optr IDENTIFIER sem_col 
+}
+cl_brace 
+
+
+function void kalbo()
+func void_optr FUNCTION_CALL op_paren cl_paren 
+{
+op_brace 
+
+
+int n = 2,v = 3,z;
+int_optr IDENTIFIER ass_val INTEGER comma IDENTIFIER ass_val INTEGER comma IDENTIFIER sem_col 
+int x;
+int_optr IDENTIFIER sem_col 
+assign(x) = square(n,n);
+assign_optr op_paren IDENTIFIER cl_paren ass_val FUNCTION_CALL op_paren IDENTIFIER comma IDENTIFIER cl_paren sem_col 
+assign(z) = square(v,v);
+assign_optr op_paren IDENTIFIER cl_paren ass_val FUNCTION_CALL op_paren IDENTIFIER comma IDENTIFIER cl_paren sem_col 
+
+
+while (n < 10)
+while_optr op_paren IDENTIFIER rel_optr INTEGER cl_paren 
+{
+op_brace 
+assign(x) = square(n,3);
+assign_optr op_paren IDENTIFIER cl_paren ass_val FUNCTION_CALL op_paren IDENTIFIER comma INTEGER cl_paren sem_col 
+assign(z) = square(v,3);
+assign_optr op_paren IDENTIFIER cl_paren ass_val FUNCTION_CALL op_paren IDENTIFIER comma INTEGER cl_paren sem_col 
+write (""+x+"\n");
+write_optr op_paren doub_quote CONST doub_quote optr IDENTIFIER optr doub_quote CONST doub_quote cl_paren sem_col 
+write (""+z+"\n");
+write_optr op_paren doub_quote CONST doub_quote optr IDENTIFIER optr doub_quote CONST doub_quote cl_paren sem_col 
+n = n+1;
+IDENTIFIER ass_val IDENTIFIER optr INTEGER sem_col 
+v = v+1;
+IDENTIFIER ass_val IDENTIFIER optr INTEGER sem_col 
+}
+cl_brace 
+}
+cl_brace 
+
+
+main ()
+main_optr op_paren cl_paren 
+{
+op_brace 
+int i = 5,n = 2,x;
+int_optr IDENTIFIER ass_val INTEGER comma IDENTIFIER ass_val INTEGER comma IDENTIFIER sem_col 
+int f = 3;
+int_optr IDENTIFIER ass_val INTEGER sem_col 
+f = 3 / 2;
+IDENTIFIER ass_val INTEGER optr INTEGER sem_col 
+write (f);
+write_optr op_paren IDENTIFIER cl_paren sem_col 
+}
+cl_brace 
