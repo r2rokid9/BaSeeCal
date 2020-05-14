@@ -1,0 +1,16 @@
+main ()
+{
+	int num,num_square;
+
+	num = 1;
+	while (num > 0)
+	{
+		write ("Hello! Please enter a number: ");
+		read(num);
+		num_square = num*num;
+		if (num_square > 0)
+			write ("The square of "+num+" is "+num_square+"\n");
+	}
+	write ("\n");
+	write ("End of the program. Bye! :)\n");
+}

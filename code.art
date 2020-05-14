@@ -1,0 +1,51 @@
+#KELVIN as 18;
+#PI as 3.14159;
+
+array int arrays[100];
+
+function int factorial(int n)
+{
+int temp,z;
+if (n <= 1)
+{
+return 1;
+}
+else
+{
+temp = n-1;
+assign(z) = factorial(temp);
+return n * z;
+}
+}
+
+function int square(int n,int u)
+{
+return n + u;
+}
+
+function void kalbo()
+{
+
+int n = 2,v = 3,z;
+int x;
+assign(x) = square(n,n);
+assign(z) = square(v,v);
+
+while (n < 10)
+{
+assign(x) = square(n,3);
+assign(z) = square(v,3);
+write (""+x+"\n");
+write (""+z+"\n");
+n = n+1;
+v = v+1;
+}
+}
+
+main ()
+{
+int i = 5,n = 2,x;
+int f = 3;
+f = 3 / 2;
+write (f);
+}
