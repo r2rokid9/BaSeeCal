@@ -6,6 +6,6 @@ Arturo Caronongan<br>
 <br>
 Analysis:<br>
 Kelvin Chua<br>
-Edward Choice<br>
+Edward Choi<br>
 <br>
 <b>Feel free to use this for educational purposes. Relevant documents are included</b>
